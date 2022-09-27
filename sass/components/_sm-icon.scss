@@ -1,0 +1,26 @@
+.sm-link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    transition: background-color var(--transition-basic);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+}
+
+.icon {
+    fill: var(--icon-color);
+    transition: fill var(--transition-basic);
+
+    .sm-link-icon:hover &,
+    .sm-link-icon:focus & {
+        fill: var(--primary-white-color);
+    }
+}
+

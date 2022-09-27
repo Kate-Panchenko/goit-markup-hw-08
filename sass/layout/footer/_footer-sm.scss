@@ -1,0 +1,8 @@
+.footer-sm {
+    display: flex;
+    gap: 10px;
+
+    &__link {
+        background-color: var(--footer-icon-bcg);
+    }
+}

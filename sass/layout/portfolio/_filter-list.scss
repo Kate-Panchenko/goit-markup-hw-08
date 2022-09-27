@@ -1,0 +1,28 @@
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.filter-list__btn {
+    font-family: inherit;
+    font-weight: 500;
+    @include font(16px, 26px);
+    text-align: center;
+    padding: 6px 22px;
+    border-radius: 4px;
+    color: var(--primary-text-color);
+    background-color: var(--primary-grey-color);
+    cursor: pointer;
+    border: 0;
+
+    transition: color var(--transition-basic), background-color var(--transition-basic),
+    box-shadow var(--transition-basic);
+
+    &:hover,
+    &:focus {
+        color: var(--primary-white-color);
+        background-color: var(--accent-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}

@@ -1,0 +1,37 @@
+@import './utils/vars';
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
+
+@import './base/base';
+@import './base/section';
+@import './base/container';
+@import './base/portfolio-section';
+
+@import './components/section-title';
+@import './components/logo';
+@import './components/modal-btn';
+@import './components/submit-btn';
+@import './components/sm-icon';
+@import './components/backdrop';
+@import './components/modal-window';
+@import './components/modal-form';
+
+@import './layout/page-header';
+@import './layout/hero';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/team';
+@import './layout/clients';
+
+@import './layout/footer/page-footer';
+@import './layout/footer/footer-info';
+@import './layout/footer/footer-sm';
+@import './layout/footer/footer-form';
+
+@import './layout/portfolio/filter-list';
+@import './layout/portfolio/portfolio-list';
+
+
+
+

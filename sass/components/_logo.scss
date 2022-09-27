@@ -1,0 +1,24 @@
+.logo {
+    font-family: var(--logo-font);
+    font-weight: 700;
+    @include font(26px, 31px);
+
+    &__header,
+    &__footer {
+            color: var(--accent-color);
+        }
+
+    &__header {
+            margin-right: 93px;
+        }
+    &_dark {
+            color: var(--primary-black-color);
+        }
+    
+    &_light {
+            color: var(--primary-white-color);
+        }
+}
+
+
+

@@ -1,0 +1,30 @@
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    &__item {
+        flex-basis: calc((100% - 90px) / 4);
+    }
+
+    &__icon-box {
+        background-color: var(--primary-grey-color);
+        @extend %align;
+        height: 120px;
+        border-radius: 4px;
+        margin-bottom: 30px;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        @include font(14px, 16px);
+        text-transform: uppercase;
+        color: var(--primary-text-color);
+    }
+
+    &__desc {
+        @include font(14px, 24px);
+        color: var(--secondary-text-color);
+    }
+}
+

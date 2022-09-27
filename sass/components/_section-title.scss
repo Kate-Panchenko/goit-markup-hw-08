@@ -1,0 +1,11 @@
+.section-title {
+    font-weight: 700;
+    @include font(36px, 42px);
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+.subtitle {
+    margin-bottom: 10px;
+}
