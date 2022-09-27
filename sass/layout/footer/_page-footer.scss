@@ -1,23 +1,23 @@
-.page-footer {
-    background-color: var(--footer-bcg-color);
-    padding-top: 60px;
-    padding-bottom: 60px;
+// .page-footer {
+//     background-color: var(--footer-bcg-color);
+//     padding-top: 60px;
+//     padding-bottom: 60px;
 
-    &__container {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    }
-}
+//     &__container {
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: baseline;
+//     }
+// }
 
-.footer-subtitle {
-    font-weight: 700;
-    @include font(14px, 16px);
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    color: var(--primary-white-color);
-}
+// .footer-subtitle {
+//     font-weight: 700;
+//     @include font(14px, 16px);
+//     text-transform: uppercase;
+//     margin-bottom: 20px;
+//     color: var(--primary-white-color);
+// }
 
-.footer-icon {
-    fill: var(--primary-white-color);
-}
+// .footer-icon {
+//     fill: var(--primary-white-color);
+// }

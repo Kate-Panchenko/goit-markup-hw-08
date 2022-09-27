@@ -1,16 +1,16 @@
 .logo {
     font-family: var(--logo-font);
     font-weight: 700;
-    @include font(26px, 31px);
+    @include font(24px, 28px);
 
     &__header,
     &__footer {
             color: var(--accent-color);
         }
 
-    &__header {
-            margin-right: 93px;
-        }
+    // &__header {
+    //         margin-right: 93px;
+    //     }
     &_dark {
             color: var(--primary-black-color);
         }
