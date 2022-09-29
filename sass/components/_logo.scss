@@ -8,9 +8,6 @@
             color: var(--accent-color);
         }
 
-    // &__header {
-    //         margin-right: 93px;
-    //     }
     &_dark {
             color: var(--primary-black-color);
         }
@@ -20,5 +17,16 @@
         }
 }
 
+@media screen and (min-width: 768px) {
+    .logo__header {
+        margin-right: 92px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        @include font(26px, 31px);
+    }
+}
 
 
