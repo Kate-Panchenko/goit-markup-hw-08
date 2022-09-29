@@ -1,41 +1,63 @@
-// .team {
-//     background-color: var(--primary-grey-color);
-//     padding-bottom: 94px;
+.team {
+    background-color: var(--primary-grey-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-//     &-sm {
-//         margin-top: 16px;
-//         display: flex;
-//         justify-content: center;
-//         gap: 10px;
-//     }
-// }
+    &-sm {
+        margin-top: 16px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+}
 
-// .team-list {
-//     display: flex;
-//     justify-content: space-between;
-//     gap: 30px;
+.team-list__item {
+    background-color: var(--primary-white-color);
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
 
-//     &__item {
-//         background-color: var(--primary-white-color);
-//         text-align: center;
-//         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//             0px 2px 1px rgba(0, 0, 0, 0.2);
-//         border-radius: 0px 0px 4px 4px;
-//     }
-// }
+.team-box {
+    padding-top: 30px;
+    padding-bottom: 24px;
 
-// .team-box {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
+    &__member {
+        font-weight: 500;
+        @include font(16px, 19px);
+        color: var(--primary-text-color);
+    }
 
-//     &__member {
-//         font-weight: 500;
-//         @include font(16px, 19px);
-//         color: var(--primary-text-color);
-//     }
+    &__desc {
+        @include font(16px, 19px);
+        color: var(--secondary-text-color);
+    }
+}
 
-//     &__desc {
-//         @include font(16px, 19px);
-//         color: var(--secondary-text-color);
-//     }
-// }
+
+@media screen and (max-width: 767px) {
+    .team-list__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .team {
+        padding-top: 94px;
+        padding-bottom: 94px; 
+    }
+
+    .team-box {
+    padding-bottom: 30px;
+    }
+}
