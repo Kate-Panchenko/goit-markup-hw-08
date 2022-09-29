@@ -1,11 +1,18 @@
-// .section-title {
-//     font-weight: 700;
-//     @include font(36px, 42px);
-//     text-align: center;
-//     color: var(--primary-text-color);
-//     margin-bottom: 50px;
-// }
+.section-title {
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary-text-color);
+    @include font(28px, 33px);
+    margin-bottom: 30px;
+}
 
-// .subtitle {
-//     margin-bottom: 10px;
-// }
+@media screen and (min-width: 1200px) {
+    .section-title {
+        @include font(36px, 42px);
+        margin-bottom: 50px;
+    }
+}
+
+.subtitle {
+    margin-bottom: 10px;
+}
