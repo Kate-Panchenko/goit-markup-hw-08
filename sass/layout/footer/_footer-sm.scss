@@ -1,8 +1,15 @@
-// .footer-sm {
-//     display: flex;
-//     gap: 10px;
+.footer-sm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 
-//     &__link {
-//         background-color: var(--footer-icon-bcg);
-//     }
-// }
+    &__link {
+        background-color: var(--footer-icon-bcg);
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .footer-sm {
+        justify-content: center;
+    }
+}

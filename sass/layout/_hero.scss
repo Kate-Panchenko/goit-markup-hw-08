@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 250px) {
     .hero {
         padding-top: 118px;
         padding-bottom: 118px;
@@ -26,7 +26,7 @@
             letter-spacing: 0.06em;
             text-transform: uppercase;
             display: flex;
-            width: 360px;
+            max-width: 360px;
 
             margin-bottom: 30px;
             margin-left: auto;
@@ -70,7 +70,7 @@
 
         &__title {
             @include font(44px, 60px);
-            width: 696px;
+            min-width: 696px;
         }
     }
 }
