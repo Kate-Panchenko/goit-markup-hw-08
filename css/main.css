@@ -300,6 +300,7 @@ ol {
 }
 .submit-button__title {
   display: inline-flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -808,6 +809,7 @@ ol {
 .team-sm {
   margin-top: 16px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
@@ -856,6 +858,7 @@ ol {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: center;
 }
 .clients-list__item {
   flex-basis: calc((100% - 30px) / 2);
