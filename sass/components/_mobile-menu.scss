@@ -22,7 +22,11 @@
 
     .mobile-menu__container {
         position: relative;
-        padding-left: 40px;
+        padding: 48px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
     }
 
     .mobile-menu-close-btn {
@@ -32,7 +36,7 @@
     }
 
     .mobile-menu__list {
-        padding-top: 48px;
+        margin-bottom: auto;
     }
 
     .mobile-menu__item {
@@ -58,10 +62,6 @@
         &_current {
             color: var(--accent-color);
         }
-    }
-
-    .mobile-menu__contacts {
-        padding-top: 306px;
     }
 
     .mobile-menu__contacts-tel {
