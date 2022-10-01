@@ -1,36 +1,48 @@
-// .modal {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 528px;
-//     background-color: var(--primary-white-color);
-//     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//         0px 2px 1px rgba(0, 0, 0, 0.2);
-//     border-radius: 4px;
-//     padding: 40px;
-// }
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    background-color: var(--primary-white-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+}
 
-// .modal-close-btn {
-//     position: absolute;
-//     @extend %align;
-//     top: 8px;
-//     right: 8px;
-//     background-color: transparent;
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     border-radius: 50%;
-//     cursor: pointer;
-//     width: 30px;
-//     height: 30px;
-//     padding: 0;
-// }
+.modal-close-btn {
+    position: absolute;
+    @extend %align;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+}
 
-// .close-icon {
-//     fill: var(--primary-black-color);
-//     transition: fill var(--transition-basic);
+.close-icon {
+    fill: var(--primary-black-color);
+    transition: fill var(--transition-basic);
 
-//     .modal-close-btn:hover &,
-//     .modal-close-btn:focus & {
-//         fill: var(--accent-color);
-//     }
-// }
+    .modal-close-btn:hover &,
+    .modal-close-btn:focus & {
+        fill: var(--accent-color);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .modal {
+        width: 96%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 528px;
+    }
+}
